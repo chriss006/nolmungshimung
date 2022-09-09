@@ -1,0 +1,267 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Sans+KR&display=swap');
+@font-face {
+  font-family: 'Gaegu', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.google.com/share?selection.family=Gaegu%7CNoto%20Sans%20KR) format('woff2');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+@font-face {
+  font-family: 'Noto Serif KR', serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.google.com/share?selection.family=Noto%20Serif%20KR) format('woff2');
+}
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 15px;
+  }
+  
+  #myAudio {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    opacity: 0.25;
+
+  }
+    
+
+
+  header {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 75px;
+    padding: 1rem;
+    color: white;
+    background: #5e5444;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+    z-index:20;
+
+  }
+
+  
+  .container_scroll {
+    height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    width: auto;
+
+  }
+  
+  
+
+  .container_text {
+    height: 100vh;
+    font-family: 'Noto Serif KR', serif;
+    color: white;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .container_text2 {
+    height: 100vh;
+    font-family: 'Gaegu', cursive;
+    color: white;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  
+  .container_img {
+    height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  .animate {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 45vh;
+    opacity: 0;
+    font-size: 40px;
+    color : white;
+    width: auto;
+    height: 90px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .trigger {
+    width: 100%;
+    height: 10px;
+    margin-bottom: 900px;
+  }
+
+
+
+
+  a:link, a:visited, a:hover, a:active {
+    color:#fff;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+  }
+
+
+
+
+  header nav ul {
+    display:flex;
+    text-align: center;}
+
+  header nav ul span {
+    padding: 20px 10px;
+    width: 88px;}
+
+  header img {
+    width:11.875rem;
+    padding:0.75rem 0;
+  }
+  
+  header nav ul span a {
+    font-weight: bold;
+    font-size:1.0625rem;}
+
+
+  header nav ul span a {
+    position: relative;
+    display: inline-block;
+    line-height: 5rem; 
+    font-weight: bold;
+    font-size:1.0625rem;
+    color: #fff;
+
+  }
+
+  header nav ul span.active a {
+    color: #fff;
+  }
+
+  header nav ul span.active a:after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:2px;
+    left:0;
+    bottom:0;}
+
+  header nav ul span.active a,
+  header nav ul span:hover a {
+    color: var(--whiteColor);
+  }
+    
+  header nav ul li.active a:after,
+  header nav ul li:hover a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:2px;
+    background-color:var(--whiteColor);
+    left:0;
+    bottom:0;
+  }
+
+
+  footer{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: gray;
+    background-color: black;
+    text-align: center ;
+    /*margin: 30px auto;*/
+    /*border: 3px dotted #000000;*/
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    position : relative;
+    transform : translateY(-100%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+  }
+
+title {
+  height: 900px;
+  padding: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+  width: 100wv;
+}
+
+head{
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.4;
+  /*padding: 1rem;*/
+  min-height: 1200px;
+  height: 75px;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: black;
+  line-height: 1.4;
+  padding: 1rem;
+  background-size : cover;
+  width: 100%;
+  /*background-color: #f7f7f7;*/
+  height:auto;
+  min-height: 1000px;
+  min-width: 450px;
+
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+@media all and (min-width: 1024px) {
+  .inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}

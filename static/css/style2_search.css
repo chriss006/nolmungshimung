@@ -1,0 +1,406 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Sans+KR&display=swap');
+@font-face {
+  font-family: 'Gaegu', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.google.com/share?selection.family=Gaegu%7CNoto%20Sans%20KR) format('woff2');
+}
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    height : 100vh;
+    overflow:auto; 
+    min-height: 700px;
+    min-width: 450px;
+  }
+  
+    
+  .container {
+    width:1270px;margin:0 auto;}
+
+
+  header {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 75px;
+    padding: 1rem;
+    color: white;
+    background: #5e5444;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+    z-index:20
+
+  }
+
+  a:link, a:visited, a:hover, a:active {
+    color:#fff;
+  }
+
+  
+  a {
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+  }
+
+  header nav ul {
+    display:flex;
+    text-align: center;}
+
+  header nav ul span {
+    padding: 20px 10px;
+    width: 88px;}
+
+  header img {
+    width:11.875rem;
+    padding:0.75rem 0;
+  }
+  
+  header nav ul span a {
+    font-weight: bold;
+    font-size:1.0625rem;}
+
+
+  header nav ul span a {
+    position: relative;
+    display: inline-block;
+    line-height: 5rem; 
+    font-weight: bold;
+    font-size:1.0625rem;
+    color: #fff;
+
+  }
+
+  header nav ul span.active a {
+    color: #fff;
+  }
+
+  header nav ul span.active a:after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:2px;
+    left:0;
+    bottom:0;}
+
+  header nav ul span.active a,
+  header nav ul span:hover a {
+    color: var(--whiteColor);
+  }
+  
+  header nav ul li.active a:after,
+  header nav ul li:hover a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:2px;
+    background-color:var(--whiteColor);
+    left:0;
+    bottom:0;
+  }
+
+  footer{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: gray;
+    background-color: #fed38a;
+    text-align: center ;
+    /*margin: 30px auto;*/
+    /*border: 3px dotted #000000;*/
+    padding: 20px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: 50px;
+    position : absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+  }
+
+  title {
+    height: 900px;
+    padding: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+    width: 100wv;
+  }
+
+head{
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.4;
+  /*padding: 1rem;*/
+  background-color: #f7f7f7;
+  min-height: 1200px;
+  height: 75px;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.4;
+  padding: 1rem;
+  background-image: url('../dogwalk/data/dogmoove.gif');
+  background-size : cover;
+  width: 100%;
+  /*background-color: #f7f7f7;*/
+  min-height: 700px;
+  min-width: 450px;
+  height: auto;
+  overflow :auto; 
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+  .btn.disabled, .btn:disabled {
+    opacity: 0.65;
+  }
+  
+  a.btn.disabled,
+  fieldset:disabled a.btn {
+    pointer-events: none;
+  }
+
+  
+  .btn-outline-success {
+    color: orange;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: orange;
+  }
+  
+  .btn-outline-success:hover {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+  }
+  
+  .btn-outline-success:focus, .btn-outline-success.focus {
+    box-shadow: 0 0 0 0.2rem  rgb(255, 136, 0, 0.5);
+  }
+  
+  .btn-outline-success.disabled, .btn-outline-success:disabled {
+    color: orange;
+    background-color: transparent;
+  }
+  
+  .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+  }
+  
+  .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-outline-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255, 136, 0, 0.5) ;
+  }
+
+  .btn-outline-info:focus, .btn-outline-info.focus {
+    box-shadow: 0 0 0 0.2rem rgb(255, 136, 0, 0.5) ;
+  }
+  
+  
+  .input-group {
+    
+    width: 450px;
+  }
+
+  
+  .form-select:focus, .form-select.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.3);
+  }
+
+
+  main {
+    margin-top:1.5rem;
+  }
+
+  .category-title {
+    padding-top: 150px;
+    text-align: center;
+    height:100px;
+    font-family:  'Gaegu', cursive;
+
+    font-size : clamp(2rem, 10vw, 7rem);
+    text-shadow: -3px 0px white, 0px 3px white, 3px 0px white, 0px -3px white;
+  }
+  
+  .category-input {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5rem;
+    
+  }
+
+
+  .category-input {
+    
+    height: 40px;
+    width: 400px;
+    border: 3px solid orange;
+    background: #ffffff;
+  }
+
+
+
+  input{
+    font-family: 'Noto Sans KR', sans-serif;
+
+    font-size : 16px;
+    width:450px;
+    padding: 8px;
+    border: 0px;
+    outline: none;
+    float: left;
+
+  }
+
+  .input-group {
+    padding-top: 6vh;
+
+  }
+    
+  button{
+    width: 100px;
+    height : 100%;
+    border: 1px;
+    background: orange;
+    outline: none;
+    float: right;
+    color: #ffffff;
+    cursor: pointer;
+
+  }
+
+  
+.input-group>.form-control, .input-group>.form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    color :gray;
+
+
+}
+.form-select {
+  
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+  input::-webkit-input-placeholder {
+    color: orange;
+  }
+
+  input:-ms-input-placeholder {
+    color: orange;
+  }
+
+  input::-moz-placeholder {
+    color: orange;
+  }
+
+  input::placeholder {
+    color :gray;
+  }
+
+
+  .category-item {
+    width: 25%;
+    height: 5rem;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.6rem;
+  }
+  
+  .category-item:hover {
+    color: #e69a06;
+    cursor: pointer;
+  }
+  
+  .inner {
+    padding: 0 1.5rem;
+  }
+  
+  @media all and (min-width: 1024px) {
+    .inner {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* 카카오맵 CSS 
+  
+  body {
+    height: 40vh; vh:전체화면높이기준
+    padding-top: 70px;
+  }
+  
+  nav {
+    height: 59px;
+  }
+  
+  main {
+    padding-top: 1.5rem;
+    height: calc(100% - 59px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #map {
+    flex-grow: 1;
+    width: 85%;
+    height: 100%;
+  }
+  
+  */

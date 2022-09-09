@@ -1,0 +1,8 @@
+folium
+scikit-learn
+jinja2 
+flask 
+pandas 
+pickle
+folium.plugins 
+js2py

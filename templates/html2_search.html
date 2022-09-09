@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <!-- bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+
+    <!-- alert -->
+
+    <script src="../static/dogwalk/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>   
+    <script src="../static/js/script2_search.js"></script>
+    <script>
+      function fn_myFn3() {
+	let timerInterval
+Swal.fire({
+title: '목줄챙겨 주인!!',
+html: '공원까지 <b></b> 걸음 남음...',
+timer: 2000,
+backdrop: `
+rgba(255, 255, 255, .45)
+url("/data/dog.png")
+27% 25%
+no-repeat
+`,
+
+timerProgressBar: true,
+didOpen: () => {
+	Swal.showLoading()
+	
+	const b = Swal.getHtmlContainer().querySelector('b')
+	timerInterval = setInterval(() => {
+		b.textContent = Swal.getTimerLeft()}, 100)},
+	
+willClose: () => {
+	clearInterval(timerInterval)}}).then((result) => {
+		if (result.dismiss === Swal.DismissReason.timer) {
+			Swal.fire("나가쟈!!")}
+      window.myForm.submit();
+		})}
+    </script>
+
+
+    <!-- favicon -->
+
+ 
+    <link rel="icon" href="../static/dogwalk/data/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="../static/dogwalk/data/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../static/dogwalk/data/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../static/dogwalk/data/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/dogwalk/data/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../static/dogwalk/data/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../static/dogwalk/data/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../static/dogwalk/data/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../static/dogwalk/data/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/dogwalk/data/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../static/dogwalk/data/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/dogwalk/data/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/dogwalk/data/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/dogwalk/data/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../static/css/dogwalk/data/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../static/dogwalk/data/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+    <!-- 문서 정보-->
+
+    <title>놀멍쉬멍 산책하멍</title> 
+
+    <meta name = "author" content = "박희정, 성미래, 이해현" />
+    <meta name = "description" content = "댕댕이 산책코스 추천 서비스" />
+    <meta name = "keywords" content = "산책, 산책추천, 강아지산책, 강아지동반, 강아지" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../static/css/style2_search.css" />
+
+  </head>
+
+
+  
+  <body>
+
+
+    <header>
+      <a href="html1_home.html">
+        <img src="../static/dogwalk/data/walkingdog.png" title="WALKINGDOG"/></a>
+      <nav>
+    		<ul>
+    			<span><a href="html2_search.html">Search</a></span>
+    			<span><a href="html3_about.html">About</a></span>
+    			<span><a href="html4_team.html">Team</a></span>
+    		</ul>
+    	</nav>
+    </header>
+
+
+
+    <!-- 페이지 제목 -->
+    <main>
+      <section id="category">
+        <div style=" height: 300px;">
+          <div class="inner">
+            <div class="category-container">
+              <h2 class="category-title">놀멍쉬멍🐾산책하멍</h2>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+        <!-- 검색버튼 --> 
+        
+        <section id="category">
+          <div style=" height: 150px;">
+            <div class="inner">
+              <div class="category-container">
+                <div class="container-fluid">
+                  <form id="myForm" class="d-flex" action="/park", method="post">
+                    <div class="input-group">
+                      <select class="form-select" id="inputGroupSelect04" name='gu' aria-label="Example select with button addon">
+                        <option selected>지역 선택</option>
+                        <option value="강남구">강남구</option>
+                        <option value="강동구">강동구</option>
+                        <option value="강북구">강북구</option>
+                        <option value="강서구">강서구</option>
+                        <option value="관악구">관악구</option>
+                        <option value="광진구">광진구</option>
+                        <option value="구로구">구로구</option>
+                        <option value="금천구">금천구</option>
+                        <option value="노원구">노원구</option>
+                        <option value="도봉구">도봉구</option>
+                        <option value="동대문구">동대문구</option>
+                        <option value="동작구">동작구</option>
+                        <option value="마포구">마포구</option>
+                        <option value="서대문구">서대문구</option>
+                        <option value="서초구">서초구</option>
+                        <option value="성동구">성동구</option>
+                        <option value="성북구">성북구</option>
+                        <option value="송파구">송파구</option>
+                        <option value="양천구">양천구</option>
+                        <option value="영등포구">영등포구</option>
+                        <option value="용산구">용산구</option>
+                        <option value="은평구">은평구</option>
+                        <option value="종로구">종로구</option>
+                        <option value="중구">중구</option>
+                        <option value="중랑구">중랑구</option>
+                      </select>
+                    <input class="form-control me-2" type="text" name ='dong' placeholder="동이름 입력" aria-label="Search">
+                    <button class="btn btn-outline-success" type="button" onclick="fn_myFn3()" >검색</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+      
+
+ 
+      </div>
+    </main>
+  </body>
+
+  <footer>
+    Copyright (c) WALKINGDOGS All Rights Reserved.
+  </footer>
+</html>

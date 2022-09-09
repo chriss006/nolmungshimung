@@ -1,0 +1,260 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Noto+Sans+KR&display=swap');
+@font-face {
+  font-family: 'Gaegu', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.google.com/share?selection.family=Gaegu%7CNoto%20Sans%20KR) format('woff2');
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  height : 100vh;
+  overflow:auto; 
+  min-height: 700px;
+  min-width: 450px;
+}
+
+
+
+
+.container {
+  width:1270px;margin:0 auto;}
+
+
+header {
+  font-family: 'Noto Sans KR', sans-serif;
+  height: 75px;
+  padding: 1rem;
+  color: white;
+  background: #5e5444;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+  z-index:20
+
+}
+
+
+
+
+a:link, a:visited, a:hover, a:active {
+  color:#fff;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+
+
+
+header nav ul {
+  display:flex;
+  text-align: center;}
+
+header nav ul span {
+  padding: 20px 10px;
+  width: 88px;}
+
+header img {
+  width:11.875rem;
+  padding:0.75rem 0;
+}
+
+header nav ul span a {
+  font-weight: bold;
+  font-size:1.0625rem;}
+
+
+header nav ul span a {
+  position: relative;
+  display: inline-block;
+  line-height: 5rem; 
+  font-weight: bold;
+  font-size:1.0625rem;
+  color: #fff;
+
+}
+
+header nav ul span.active a {
+  color: #fff;
+}
+
+header nav ul span.active a:after {
+  content:"";
+  position:absolute;
+  width:100%;
+  height:2px;
+  left:0;
+  bottom:0;
+}
+
+header nav ul span.active a,
+header nav ul span:hover a {
+  color: var(--whiteColor);
+}
+  
+header nav ul li.active a:after,
+header nav ul li:hover a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height:2px;
+  background-color:var(--whiteColor);
+  left:0;
+  bottom:0;
+}
+
+
+footer{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: gray;
+  background-color: black;
+  text-align: center ;
+  /*margin: 30px auto;*/
+  /*border: 3px dotted #000000;*/
+  padding: 20px;
+  width: 100%;
+  height: 50px;
+  position : relative;
+  transform : translateY(-100%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+title {
+
+  height: 900px;
+  padding: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+  flex: auto;
+}
+
+  .category-title {
+    padding-top: 150px;
+    text-align: center;
+    height:100px;
+    font-family:  'Gaegu', cursive;
+
+    font-size : clamp(2rem, 10vw, 7rem);
+    text-shadow: -3px 0px white, 0px 3px white, 3px 0px white, 0px -3px white;
+  }
+  
+head{
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.4;
+  /*padding: 1rem;*/
+  background-color: #f7f7f7;
+  min-height: 1200px;
+  height: 75px;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: black;
+  line-height: 1.4;
+  padding: 1rem;
+  background-size : cover;
+  width: 100%;
+  /*background-color: #f7f7f7;*/
+  height: 100vh;
+  min-height: 700px;
+  min-width: 450px;
+  overflow :auto; 
+
+
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: row;
+  flex-wrap: wrap;
+  height: auto;
+  width : auto;
+  padding : 20px;
+
+}
+
+.flex_item_outer {
+  opacity:0.85;
+  justify-content: space-evenly;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='17' ry='17' stroke='white' stroke-width='6' stroke-dasharray='15%2c 15%2c 1' stroke-dashoffset='54' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 17px;
+  flex: auto;
+  margin: 70px;
+}
+
+.flex_item_image {
+  text-align: center;
+  margin : 50px;
+  max-width:100%;
+}
+
+.flex_item_list {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: white;
+  background-color: black;
+  text-align: center ;
+  margin : 50px;
+
+}
+
+span.title{
+  font-size: 200%;
+}
+
+span.text1{
+  font-size: 150%;
+
+}
+
+span.text2{
+  font-size: 180%;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media all and (min-width: 1024px) {
+  .inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
