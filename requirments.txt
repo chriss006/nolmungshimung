@@ -3,5 +3,4 @@ scikit-learn
 jinja2 
 flask 
 pandas 
-folium.plugins 
 js2py
